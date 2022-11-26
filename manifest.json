@@ -1,0 +1,30 @@
+{
+  "name": "外链自动跳转",
+  "description": "外链自动跳转",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "author": "Tanix",
+  "content_scripts": [
+    {
+      "js": ["url-param-redirect.js"],
+      "run_at": "document_start",
+      "matches": [
+        "*://link.zhihu.com/?target=*",
+        "*://link.juejin.cn/?target=*",
+        "*://www.jianshu.com/go-wild*",
+        "*://link.csdn.net/?target=*",
+        "*://weibo.cn/sinaurl?u=*"
+      ]
+    },
+    {
+      "js": ["t-cn-hidden.js"],
+      "run_at": "document_start",
+      "matches": ["*://t.cn/*"]
+    },
+    {
+      "js": ["t-cn-redirect.js"],
+      "run_at": "document_end",
+      "matches": ["*://t.cn/*"]
+    }
+  ]
+}
