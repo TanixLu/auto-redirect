@@ -1,7 +1,7 @@
 {
   "name": "外链自动跳转",
   "description": "外链自动跳转",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "manifest_version": 3,
   "author": "Tanix",
   "content_scripts": [
@@ -9,22 +9,53 @@
       "js": ["url-param-redirect.js"],
       "run_at": "document_start",
       "matches": [
-        "*://link.zhihu.com/?target=*",
-        "*://link.juejin.cn/?target=*",
-        "*://www.jianshu.com/go-wild*",
-        "*://link.csdn.net/?target=*",
-        "*://weibo.cn/sinaurl?u=*"
+        "*://link.zhihu.com/*",
+        "*://link.juejin.cn/*",
+        "*://link.csdn.net/*",
+        "*://link.logonews.cn/*",
+        "*://link.uisdc.com/*",
+        "*://*.jianshu.com/go-wild*",
+        "*://*.weibo.cn/sinaurl*",
+        "*://*.steamcommunity.com/linkfilter*",
+        "*://*.game.bilibili.com/linkfilter*",
+        "*://*.oschina.net/action/GoToLink*",
+        "*://*.developers.weixin.qq.com/community/middlepage/href*",
+        "*://*.pixiv.net/jump.php*",
+        "*://*.chinaz.com/go.shtml*",
+        "*://*.c.pc.qq.com/index.html*",
+        "*://*.c.pc.qq.com/middlem.html*",
+        "*://*.yuque.com/r/goto*",
+        "*://*.mcbbs.net/plugin.php?id=link_redirect*",
+        "*://*.360doc.cn/outlink.html*",
+        "*://*.tianyancha.com/security*",
+        "*://*.afdian.net/link*",
+        "*://*.mail.qq.com/cgi-bin/readtemplate*",
+        "*://*.gitee.com/link*",
+        "*://*.xie.infoq.cn/link*",
+        "*://*.leetcode.cn/link*",
+        "*://*.blog.51cto.com/transfer*",
+        "*://*.coolapk.com/link*",
+        "*://*.ref.gamer.com.tw/redir.php*",
+        "*://*.minecraft.curseforge.com/linkout*"
       ]
     },
     {
-      "js": ["t-cn-hidden.js"],
+      "js": ["content-redirect-start.js"],
       "run_at": "document_start",
-      "matches": ["*://t.cn/*"]
+      "matches": [
+        "*://t.cn/*",
+        "*://jump.bdimg.com/safecheck*",
+        "*://iphone.myzaker.com/zaker/link.php*"
+      ]
     },
     {
-      "js": ["t-cn-redirect.js"],
+      "js": ["content-redirect-end.js"],
       "run_at": "document_end",
-      "matches": ["*://t.cn/*"]
+      "matches": [
+        "*://t.cn/*",
+        "*://jump.bdimg.com/safecheck*",
+        "*://iphone.myzaker.com/zaker/link.php*"
+      ]
     }
   ]
 }
