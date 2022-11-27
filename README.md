@@ -1,5 +1,11 @@
 # auto-redirect
 
+## 功能
+
+跳过跳转提示页面，直达目的地
+
+![](assets/demo.gif)
+
 ## 使用方法
 
 参考[ustc-auto-login](https://github.com/TanixLu/ustc-auto-login#:~:text=%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95-,%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95,-%E7%82%B9%E5%87%BB%E5%8F%B3%E4%BE%A7)使用方法的前两步
@@ -67,7 +73,6 @@ https://www.coolapk.com/link?url=https%3A%2F%2Fpan.lanzouv.com%2Fb0f1gnb3a
 https://ref.gamer.com.tw/redir.php?url=https%3A%2F%2Fwww.facebook.com%2Ftos.zh%2F%3Ffref%3Dnf
 
 https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fci.tterrag.com%252fjob%252fEnderIO-Modules%252fjob%252fEnderIO-Combined%252f33%252fchanges
-
 
 ### 通过网页内容跳转
 
