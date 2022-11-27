@@ -2,17 +2,35 @@
 
 ## 功能
 
-跳过跳转提示页面，直达目的地
+跳过跳转提示页面，直达目的地：
 
 ![](assets/demo.gif)
 
 ## 使用方法
 
-参考[ustc-auto-login](https://github.com/TanixLu/ustc-auto-login#:~:text=%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95-,%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95,-%E7%82%B9%E5%87%BB%E5%8F%B3%E4%BE%A7)使用方法的前两步
+参考[ustc-auto-login](https://github.com/TanixLu/ustc-auto-login#:~:text=%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95-,%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95,-%E7%82%B9%E5%87%BB%E5%8F%B3%E4%BE%A7)使用方法的前两步。
+
+## 原理
+
+中间页面分为两种：
+
+- 一种是可从URL获取到要跳转的地址，那么暂停页面的加载（`window.stop()`），从URL获取地址并跳转。
+
+- 另一种是需要从页面内容中获取跳转地址（如t.cn类型），这种比较少，先在开始时将页面隐藏（`document.documentElement.setAttribute("hidden", "")`），然后在加载完的时候从页面中获取链接再跳转。
+
+## 特点
+
+与[Open-the-F-king-URL-Right-Now](https://github.com/OldPanda/Open-the-F-king-URL-Right-Now)相比：可从URL获取跳转目的地时，不加载中间页面加快了跳转；不能从URL直接获取目的地时，同样使页面为空白，减少了跳转时的视觉感知。
+
+与[anti-redirect](https://github.com/axetroy/anti-redirect)相比：从任何网站打开的中间页面都能跳转，比如下面的测试链接，anti-redirect脚本不会处理，因为GitHub本来不会加跳转确认页面；另外有时候页面没加载完的时候就点击链接，anti-redirect可能还没处理，于是会进入中转页面。
+
+## 反馈
+
+如果有此插件不能跳转的页面，欢迎通过[issues](https://github.com/TanixLu/auto-redirect/issues)反馈，请附上不能跳转的中间页面链接，就像下面的测试链接那样。如有其他问题也欢迎通过issues反馈。
 
 ## 测试链接
 
-### 通过url参数跳转
+### 通过URL参数跳转
 
 https://link.zhihu.com/?utm_oi=35221042888704&target=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import
 
