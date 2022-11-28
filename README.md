@@ -92,6 +92,8 @@ https://ref.gamer.com.tw/redir.php?url=https%3A%2F%2Fwww.facebook.com%2Ftos.zh%2
 
 https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fci.tterrag.com%252fjob%252fEnderIO-Modules%252fjob%252fEnderIO-Combined%252f33%252fchanges
 
+https://docs.qq.com/scenario/link.html?url=https%3A%2F%2Fm.tb.cn%2Fh.USHBypD%3Ftk%3DyeSfd2qxzFC
+
 ### 通过网页内容跳转
 
 http://t.cn/RgAKoPE
