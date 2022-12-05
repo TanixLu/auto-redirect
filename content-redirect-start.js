@@ -13,12 +13,12 @@ const pattern_action_list = [
 ];
 
 let should_redirect = false;
-let action = null;
+let redirect_action = null;
 for (const pattern_action of pattern_action_list) {
     if (pattern_action[0].test(location.href)) {
         // 隐藏整个页面
         document.documentElement.setAttribute("hidden", "");
-        action = pattern_action[1];
+        redirect_action = pattern_action[1];
         should_redirect = true;
         break;
     }

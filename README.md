@@ -94,6 +94,8 @@ https://minecraft.curseforge.com/linkout?remoteUrl=http%253a%252f%252fci.tterrag
 
 https://docs.qq.com/scenario/link.html?url=https%3A%2F%2Fm.tb.cn%2Fh.USHBypD%3Ftk%3DyeSfd2qxzFC
 
+https://en.mail.qq.com/cgi-bin/readtemplate?t=safety&check=false&gourl=https%3A%2F%2Fclick.pstmrk.it%2F2sm%2Fsms-activate.org%252Fapi%252Fapi.php%253Fact%253Dconfirm%2526confirm%253D71200c0ba17a07061ab45ff48de5f6d9%2526email%253Dtanixlu%2540foxmail.com%2F0tcQ2zQN%2FMol8%2FETbbB8jgoo%2FdGVtcGxhdGVJZF8x&subtemplate=gray&evil=0
+
 ### 通过网页内容跳转
 
 http://t.cn/RgAKoPE
